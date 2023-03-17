@@ -1,0 +1,28 @@
+main {
+  .container {
+    display: grid;
+    place-content: center;
+    padding: 6rem 0;
+
+    .puzzle-boxes {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border: 2rem double $black-color;
+      border-radius: 0.3rem;
+
+      .puzzle-pieces__box {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 0.2rem;
+        border: 1px solid $black-color;
+  
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+}

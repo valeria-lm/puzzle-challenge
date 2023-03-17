@@ -1,0 +1,46 @@
+h1 {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  color: $white-color;
+  background-color: $black-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .puzzle-pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: $white-color;
+    border-bottom: 1px solid $black-color;
+
+    .puzzle-pieces__box {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.2rem;
+      border: 3px solid $black-color;
+      
+      img {
+        height: 100%;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 0.2rem;
+      }
+
+      &:hover {
+        border: 3px dashed $red-color;
+        padding: 0.1rem;
+      }
+    }
+  }
+}
